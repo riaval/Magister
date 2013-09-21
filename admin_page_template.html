@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+  <!-- Stock -->
+  <link rel="stylesheet" type="text/css" class="ui" href="main.css">
+
+  <!-- Semantic ui -->
+  <link rel="stylesheet" type="text/css" class="ui" href="semantic/elements/button.css">
+  <link rel="stylesheet" type="text/css" class="ui" href="semantic/elements/divider.css">
+  <link rel="stylesheet" type="text/css" class="ui" href="semantic/elements/header.css">
+  <link rel="stylesheet" type="text/css" class="ui" href="semantic/elements/icon.css">
+  <link rel="stylesheet" type="text/css" class="ui" href="semantic/elements/image.css">
+  <link rel="stylesheet" type="text/css" class="ui" href="semantic/elements/input.css">
+  <link rel="stylesheet" type="text/css" class="ui" href="semantic/elements/label.css">
+  <link rel="stylesheet" type="text/css" class="ui" href="semantic/elements/loader.css">
+  <link rel="stylesheet" type="text/css" class="ui" href="semantic/elements/progress.css">
+  <link rel="stylesheet" type="text/css" class="ui" href="semantic/elements/segment.css">
+  <link rel="stylesheet" type="text/css" class="ui" href="semantic/elements/step.css">
+
+  <link rel="stylesheet" type="text/css" class="ui" href="semantic/collections/breadcrumb.css">
+  <link rel="stylesheet" type="text/css" class="ui" href="semantic/collections/form.css">
+  <link rel="stylesheet" type="text/css" class="ui" href="semantic/collections/grid.css">
+  <link rel="stylesheet" type="text/css" class="ui" href="semantic/collections/menu.css">
+  <link rel="stylesheet" type="text/css" class="ui" href="semantic/collections/message.css">
+  <link rel="stylesheet" type="text/css" class="ui" href="semantic/collections/table.css">
+
+  <link rel="stylesheet" type="text/css" class="ui" href="semantic/views/comment.css">
+  <link rel="stylesheet" type="text/css" class="ui" href="semantic/views/list.css">
+  <link rel="stylesheet" type="text/css" class="ui" href="semantic/views/feed.css">
+  <link rel="stylesheet" type="text/css" class="ui" href="semantic/views/item.css">
+  <link rel="stylesheet" type="text/css" class="ui" href="semantic/views/statistic.css">
+
+  <link rel="stylesheet" type="text/css" class="ui" href="semantic/modules/carousel.css">
+  <link rel="stylesheet" type="text/css" class="ui" href="semantic/modules/modal.css">
+  <link rel="stylesheet" type="text/css" class="ui" href="semantic/modules/dropdown.css">
+  <link rel="stylesheet" type="text/css" class="ui" href="semantic/modules/popup.css">
+  <link rel="stylesheet" type="text/css" class="ui" href="semantic/modules/reveal.css">
+  <link rel="stylesheet" type="text/css" class="ui" href="semantic/modules/rating.css">
+  <link rel="stylesheet" type="text/css" class="ui" href="semantic/modules/sidebar.css">
+  <link rel="stylesheet" type="text/css" class="ui" href="semantic/modules/shape.css">
+  <link rel="stylesheet" type="text/css" class="ui" href="semantic/modules/tab.css">
+  <link rel="stylesheet" type="text/css" class="ui" href="semantic/modules/checkbox.css">
+  <link rel="stylesheet" type="text/css" class="ui" href="semantic/modules/dimmer.css">
+  <link rel="stylesheet" type="text/css" class="ui" href="semantic/modules/transition.css">
+
+  <link rel="stylesheet" type="text/css" class="ui" href="semantic/sketchy.css">
+  <link rel="stylesheet" type="text/css" href="semantic/semantic.css">
+
+  <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700|Open+Sans:300italic,400,300,700' rel='stylesheet' type='text/css'>
+
+  <script src="semantic/library/jquery.js"></script>
+  <script src="semantic/library/history.js"></script>
+  <script src="semantic/library/easing.js"></script>
+  <script src="semantic/library/ace.js"></script>
+  <script src="semantic/library/waypoints.js"></script>
+
+  <script src="semantic/modules/api.js"></script>
+  <script src="semantic/modules/state.js"></script>
+  <script src="semantic/modules/checkbox.js"></script>
+  <script src="semantic/modules/dimmer.js"></script>
+  <script src="semantic/modules/dropdown.js"></script>
+  <script src="semantic/modules/modal.js"></script>
+  <script src="semantic/modules/popup.js"></script>
+  <script src="semantic/modules/rating.js"></script>
+  <script src="semantic/modules/sidebar.js"></script>
+  <script src="semantic/modules/tab.js"></script>
+  <script src="semantic/modules/transition.js"></script>
+
+  <script src="semantic/semantic.js"></script>
+
+</head>
+<body id="example" class="admin">
+
+  <script src="semantic/form.js"></script>
+
+  <div class="ui fixed transparent inverted main menu">
+      <div class="box_container">
+        <a class="item">
+            <i class="home icon"></i>
+        </a>
+        <a class="item">
+            КНУ им. Тараса Шевченко
+        </a>
+        <a class="item messages">
+          <div class="ui red corner label">32</div>
+          <i class="mail icon"></i><span>Messages</span>
+          
+        </a>
+        <div class="right menu">
+          <div class="ui dropdown pointing link item">
+            Language <i class="dropdown icon"></i>
+            <div class="menu ui transition hidden">
+              <a class="item">English</a>
+              <a class="item">Русский</a>
+              <a class="item">Українська</a>
+            </div>
+          </div>
+        <a class="item">
+          <i class="user icon"></i> Admin
+        </a>
+        </div>
+      </div>
+  </div>
+
+  <div class="box_container under_fixed main">
+
+  <div class="ui grid">
+    <div class="four wide column">
+      <div id="sidebar" class="ui pointing vertical menu fluid">
+        <div class="header item">
+              Console
+        </div>
+        <a class="item active">
+          <i class="home icon"></i>Home
+<!--           <div class="menu">
+            <a class="item active">Home</a>
+            <a class="item">Add</a>
+          </div> -->
+        </a>
+        <a class="item">
+          <i class="users layout icon"></i> Administrators
+        </a>
+        <a class="item">
+          <i class="settings layout icon"></i> Settings
+        </a>
+        <div class="header item">
+            University
+        </div>
+        <a class="red item">
+          <i class="red book layout icon"></i> News
+        </a>
+        <a class="blue item">
+          <i class="blue bookmark layout icon"></i> Facultas
+        </a>
+        <a class="green item">
+          <i class="green tag layout icon"></i> Cathedra
+        </a>
+        <a class="purple item">
+          <i class="purple community layout icon"></i> Groups
+        </a>
+        <a class="teal item">
+          <i class="teal users icon"></i> Users
+        </a>
+        <div class="ui dropdown link item">
+          More <i class="icon right triangle"></i>
+          <div class="menu ui transition hidden">
+            <a class="item"><i class="edit icon"></i> Edit Profile</a>
+            <a class="item"><i class="globe icon"></i> Choose Language</a>
+            <a class="item"><i class="settings icon"></i> Account Settings</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="twelve wide column">
+<!--       <div class="ui secondary pointing menu">
+        <a class="item active">
+          <i class="home icon"></i> Home
+        </a>
+        <a class="item">
+          <i class="mail icon"></i> Messages
+        </a>
+        <a class="item">
+          <i class="community icon"></i> Browse
+        </a>
+      </div> -->
+
+      <div class="ui stacked segment">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sed dolor eros. Duis convallis ligula eros, vel iaculis lectus accumsan vel. Suspendisse potenti. Fusce aliquet augue eu rhoncus elementum. Ut feugiat enim ut odio eleifend, quis consequat risus scelerisque. Sed aliquet ullamcorper purus quis lobortis. Proin fringilla diam eu justo tempus lacinia. Nullam in convallis erat. Phasellus laoreet quam ut velit mattis bibendum. Pellentesque facilisis vitae justo ac porta.</p>
+
+        <p>Aliquam ante elit, convallis sed velit sed, fringilla vulputate risus. Nam dui risus, facilisis vel sem ut, porta commodo mauris. Sed ac risus tortor. Nunc sit amet massa id purus hendrerit aliquet. Aliquam id turpis urna. Phasellus vitae sem elit. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Duis laoreet ultrices volutpat. Nullam accumsan ante et magna suscipit, in auctor risus adipiscing. Vivamus nunc orci, feugiat et dolor id, venenatis condimentum ipsum. Integer purus diam, egestas et elit at, ullamcorper egestas augue. Donec viverra et nibh a lacinia. Ut interdum orci metus, id congue neque consequat eu. Pellentesque ultricies nisi lorem, sed molestie ante faucibus vel.</p>
+
+        <p>Maecenas et commodo nulla, at ultrices nulla. Suspendisse in erat porta, cursus justo et, tristique urna. Donec ac malesuada sapien. Aenean ac suscipit felis. Maecenas et velit eget urna egestas adipiscing at at nisi. Aenean vehicula fermentum bibendum. Sed hendrerit aliquet odio euismod varius. Aenean sit amet consequat leo. Ut malesuada felis eu purus porta imperdiet. Fusce ultrices arcu in ipsum aliquam placerat. Nullam vel velit augue. Duis nec velit velit. Etiam aliquam leo blandit elit auctor rhoncus. Sed iaculis rhoncus magna eu consequat. Cras vestibulum, lacus id accumsan tincidunt, leo libero ultricies metus, nec vehicula erat turpis et mauris. Etiam sit amet erat in urna aliquet volutpat sed eu justo.</p>
+
+        <p>Proin tincidunt tincidunt felis ut mattis. Aliquam erat volutpat. Maecenas sapien lectus, feugiat vel metus a, molestie tincidunt orci. Integer sollicitudin sollicitudin eros, in auctor nibh condimentum eu. Quisque id scelerisque mi. Maecenas congue tortor sit amet nulla accumsan, fringilla gravida ligula semper. In lorem augue, tempor vel congue eu, accumsan vel metus.</p>
+
+        <p>Curabitur posuere purus vel leo mollis faucibus. Donec tincidunt ante nec ornare tristique. Vestibulum porttitor, nisi in dapibus ullamcorper, tortor dolor aliquam lorem, id molestie dolor lorem vel ligula. Vivamus non diam id felis fringilla condimentum. Vestibulum pulvinar scelerisque feugiat. Curabitur in tristique risus. Suspendisse potenti. Curabitur aliquam felis non eleifend ultricies. Ut sit amet neque eget purus elementum rhoncus. Donec bibendum tempus nisl, ut fringilla tellus imperdiet id. Nullam in felis ut ligula tempor sagittis at a massa. Sed ac fringilla lectus. Morbi posuere, risus in dapibus tincidunt, libero orci porta justo, eu dignissim nunc mi quis risus. Vivamus sit amet semper lacus. Nam lacinia arcu eget lorem dignissim, id laoreet odio sollicitudin. </p>
+
+
+        <p>Curabitur posuere purus vel leo mollis faucibus. Donec tincidunt ante nec ornare tristique. Vestibulum porttitor, nisi in dapibus ullamcorper, tortor dolor aliquam lorem, id molestie dolor lorem vel ligula. Vivamus non diam id felis fringilla condimentum. Vestibulum pulvinar scelerisque feugiat. Curabitur in tristique risus. Suspendisse potenti. Curabitur aliquam felis non eleifend ultricies. Ut sit amet neque eget purus elementum rhoncus. Donec bibendum tempus nisl, ut fringilla tellus imperdiet id. Nullam in felis ut ligula tempor sagittis at a massa. Sed ac fringilla lectus. Morbi posuere, risus in dapibus tincidunt, libero orci porta justo, eu dignissim nunc mi quis risus. Vivamus sit amet semper lacus. Nam lacinia arcu eget lorem dignissim, id laoreet odio sollicitudin. </p>
+        <p>Curabitur posuere purus vel leo mollis faucibus. Donec tincidunt ante nec ornare tristique. Vestibulum porttitor, nisi in dapibus ullamcorper, tortor dolor aliquam lorem, id molestie dolor lorem vel ligula. Vivamus non diam id felis fringilla condimentum. Vestibulum pulvinar scelerisque feugiat. Curabitur in tristique risus. Suspendisse potenti. Curabitur aliquam felis non eleifend ultricies. Ut sit amet neque eget purus elementum rhoncus. Donec bibendum tempus nisl, ut fringilla tellus imperdiet id. Nullam in felis ut ligula tempor sagittis at a massa. Sed ac fringilla lectus. Morbi posuere, risus in dapibus tincidunt, libero orci porta justo, eu dignissim nunc mi quis risus. Vivamus sit amet semper lacus. Nam lacinia arcu eget lorem dignissim, id laoreet odio sollicitudin. </p>
+        <p>Curabitur posuere purus vel leo mollis faucibus. Donec tincidunt ante nec ornare tristique. Vestibulum porttitor, nisi in dapibus ullamcorper, tortor dolor aliquam lorem, id molestie dolor lorem vel ligula. Vivamus non diam id felis fringilla condimentum. Vestibulum pulvinar scelerisque feugiat. Curabitur in tristique risus. Suspendisse potenti. Curabitur aliquam felis non eleifend ultricies. Ut sit amet neque eget purus elementum rhoncus. Donec bibendum tempus nisl, ut fringilla tellus imperdiet id. Nullam in felis ut ligula tempor sagittis at a massa. Sed ac fringilla lectus. Morbi posuere, risus in dapibus tincidunt, libero orci porta justo, eu dignissim nunc mi quis risus. Vivamus sit amet semper lacus. Nam lacinia arcu eget lorem dignissim, id laoreet odio sollicitudin. </p>
+      </div>
+    </div>
+  </div>
+
+  </div>
+
+  <div class="ui horizontal divider">
+    <i class="circular pin icon"></i>
+  </div>
+  <div class="ui divided horizontal footer link list">
+    <a class="item" href="https://github.com/riaval/magister">
+      <i class="small github icon"></i>
+      GitHub</a>
+    <div class="item">© 2013 Zhukov Dmitry</div>
+  </div>
+
+</body>
+</html>

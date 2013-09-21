@@ -1,2 +1,2 @@
-magister
+Magister
 ========
